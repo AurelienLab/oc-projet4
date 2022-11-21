@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Archivo-Regular';
+    src:url('fonts/Archivo-Regular.ttf.woff') format('woff'),
+    url('fonts/Archivo-Regular.ttf.svg#Archivo-Regular') format('svg'),
+    url('fonts/Archivo-Regular.ttf.eot'),
+    url('fonts/Archivo-Regular.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -1039,4 +1049,28 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.archivo {
+    font-family: Archivo-Regular, serif;
+    letter-spacing: -1px;
+    font-size: 2.35rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+blockquote {
+    font-style: oblique;
+    border: none;
+    margin: auto;
+    padding: 0;
+    width: 77%;
+}
+
+blockquote p {
+    font-size: 2.1rem!important;
+}
+
+figcaption {
+    font-size: 2rem;
 }
