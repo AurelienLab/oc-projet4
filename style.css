@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Archivo-Regular';
+    src:url('fonts/Archivo-Regular.ttf.woff') format('woff'),
+    url('fonts/Archivo-Regular.ttf.svg#Archivo-Regular') format('svg'),
+    url('fonts/Archivo-Regular.ttf.eot'),
+    url('fonts/Archivo-Regular.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -90,6 +100,11 @@ a:hover {
     right: 0;
 }
 
+.bloc-bg-texture * {
+    position: relative;
+    background-color: transparent;
+}
+
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
@@ -133,7 +148,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #171717;
 }
 
 .d-bloc .a-btn:hover,
@@ -195,7 +210,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: #595959;
 }
 
 .d-bloc .panel button:hover,
@@ -651,7 +666,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #171717!important;
 }
 
 .container {
@@ -677,7 +692,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -753,7 +768,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(42, 37, 26, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -775,11 +790,11 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFCBB3!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #C64A10;
     color: #FFFFFF!important;
 }
 
@@ -818,11 +833,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/bg-dessin-iphone-min.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation-min.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +863,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1039,4 +1054,28 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.archivo {
+    font-family: Archivo-Regular, serif;
+    letter-spacing: -1px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+blockquote {
+    font-style: oblique;
+    border: none;
+    margin: auto;
+    padding: 0;
+    width: 77%;
+}
+
+blockquote p {
+    font-size: 2.1rem!important;
+}
+
+figcaption {
+    font-size: 2rem;
 }
