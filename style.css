@@ -105,8 +105,13 @@ a:hover {
     background-color: transparent;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
+.no-webp .texture-paper::before {
+    background: url("img/texture-paper-min.png");
+    background-size: 280px 280px;
+}
+
+.webp .texture-paper::before {
+    background: url("img/texture-paper-min.webp");
     background-size: 280px 280px;
 }
 
@@ -832,12 +837,20 @@ h4 {
     background-image: url("img/lines-h2-bg.png");
 }
 
-.bg-banniere {
-    background-image: url("img/bg-dessin-iphone-min.jpg");
+.no-webp .bg-banniere {
+    background-image: url("img/1_big/bg-dessin-iphone-min.jpg");
 }
 
-.bg-presentation {
-    background-image: url("img/image-de-presentation-min.jpg");
+.webp .bg-banniere {
+    background-image: url("img/1_big/bg-dessin-iphone-min.webp");
+}
+
+.no-webp .bg-presentation {
+    background-image: url("img/1_big/image-de-presentation-min.jpg");
+}
+
+.webp .bg-presentation {
+    background-image: url("img/1_big/image-de-presentation-min.webp");
 }
 
 @media (max-width: 1024px) {
