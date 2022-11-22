@@ -2,8 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="description" content="Contactez nos experts en web design pour obtenir un devis ou tout simplement prendre rendez-vous. Nous pouvons vous rencontrer dans toute la région lyonnaise pour vos projets de site internet attractif, responsive et optimisé. ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
@@ -69,27 +68,27 @@
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
-					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<form id="form_1" novalidate data-success-msg="Votre message a été envoyé." data-fail-msg="Désolé, il semble que notre serveur ne réponde pas. Veuillez nous excuser pour le désagrément.">
 						<div class="form-group">
-							<label>
+							<label for="name">
 								Nom
 							</label>
 							<input id="name" class="form-control" required >
 						</div>
 						<div class="form-group">
-							<label>
+							<label for="email">
 								Adresse email
 							</label>
 							<input id="email" class="form-control" type="email" required >
 						</div>
 						<div class="form-group">
-							<label>
-								Comment nous avez-vous connu ?
+							<label for="input_504">
+								Comment nous avez-vous connus ?
 							</label>
-							<input class="form-control" type="email" required id="input_504" >
+							<input class="form-control" type="text" required id="input_504" >
 						</div>
 						<div class="form-group">
-							<label>
+							<label for="message">
 								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 							</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 						</div>
@@ -99,9 +98,10 @@
 					</form>
 				</div>
 				<div class="col-sm-6">
-					<p>
-						contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-					</p>
+					<address>
+						<a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a><br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					</address>
+<!--					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.083137365214!2d4.827978615817879!3d45.76952407910574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1669077513349!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
 				</div>
 			</div>
 		</div>
@@ -109,7 +109,7 @@
 	<!-- bloc-7 END -->
 
 	<!-- ScrollToTop Button -->
-	<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+	<button aria-label="Remonter en haut de la page" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></button>
 	<!-- ScrollToTop Button END-->
 </main>
 
@@ -126,22 +126,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="Twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="index.html" aria-label="Instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
