@@ -6,6 +6,7 @@
     url('fonts/Archivo-Regular.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
