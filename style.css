@@ -1101,14 +1101,17 @@ figcaption {
 
 .contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+    font-size: 1.6rem;
 }
 
 .contact i {
-    width: 25px;
+    font-size: 30px;
+    color: #c64a10;
+    margin-bottom: 10px;
 }
 
 .contact address {
